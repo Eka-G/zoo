@@ -74,7 +74,13 @@ li {
   background-image: url(../../assets/images/favorite-animal__bg.jpg);
 }
 
+.sections-margin {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 .title-h3 {
+  margin-bottom: 80px;
   font-size: 40px;
   font-weight: 500;
   line-height: 47px;
@@ -88,6 +94,7 @@ li {
   border: none;
   border-radius: 30px;
   background-color: #70cb0e;
+  cursor: pointer;
 }
 
 .link {
@@ -195,10 +202,6 @@ li {
   align-items: center;
 }
 
-.how-works__title {
-  margin-bottom: 80px;
-}
-
 .how-works__gallery {
   margin-bottom: 77px;
   padding-top: 50px;
@@ -242,3 +245,4 @@ li {
 .how-works__img {
   height: 100%;
 }
+
