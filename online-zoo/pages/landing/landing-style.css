@@ -101,7 +101,12 @@ li {
   border: none;
   border-radius: 30px;
   background-color: #70cb0e;
+  transition: all ease-out 0.3s;
   cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 0 30px #ffc800;
 }
 
 .link {
@@ -376,10 +381,6 @@ li {
 }
 
 /* testimonials */
-/* .testimonials__slider {
-  flex-grow: 0;
-} */
-
 .testimonials__slider .slider__content {
   grid-template-rows: 1fr;
   grid-gap: 20px;
