@@ -59,6 +59,8 @@ li {
 }
 
 .body {
+  width: 100%;
+  height: 100%;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #000;
@@ -68,6 +70,10 @@ li {
 .container {
   margin: 0 auto;
   width: 1160px;
+}
+
+.container--map {
+  position: relative;
 }
 
 .btn {
@@ -136,6 +142,156 @@ li {
   cursor: default;
 }
 
+/* map */
+.map {
+  margin-top: 95px;
+  margin-bottom: 95px;
+  position: relative;
+}
+
+.map__item {
+  position: absolute;
+  top: 0;
+}
+
+/* ---------------------- */
+.map__caption {
+  max-width: 60px;
+  text-align: center;
+}
+
+.map__usa {
+  text-transform: uppercase;
+  top: 380px;
+  left: 202px;
+}
+
+.map__drc {
+  top: 525px;
+  left: 510px;
+  font-size: 18px;
+}
+
+.map__china {
+  top: 393px;
+  left: 832px;
+}
+
+/* ---------------------- */
+.map__mark-eagle {
+  top: 394px;
+  left: 147px;
+}
+
+.map__mark-alligator {
+  top: 397px;
+  left: 272px;
+}
+
+.map__mark-gorilla {
+  top: 510px;
+  left: 620px;
+}
+
+.map__mark-panda {
+  top: 400px;
+  left: 890px;
+}
+
+/* ---------------------- */
+.map__item--active .map__animal-pic {
+  border: 4px solid #70cb0e;
+}
+
+.map__item--active .map__animal-name {
+  position: relative;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  max-width: 111px;
+  background-color: #70cb0e;
+}
+
+.map__item--active .map__animal-name::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 50%;
+  left: -12px;
+  margin-top: -4px;
+  border: 4px solid transparent; border-right: 8px solid #70cb0e;
+}
+
+.map__item--animal {
+  display: flex;
+  align-items: center;
+}
+
+.map__animal-pic {
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.map__animal-name {
+  max-width: 64px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.map__animal-name--country {
+  text-transform: none;
+}
+
+.map__item--eagle {
+  top: 397px;
+  left: 20px;
+}
+
+.map__item--alligator {
+  top: 407px;
+  left: 294px;
+}
+
+.map__item--gorilla {
+  top: 505px;
+  left: 650px;
+}
+
+.map__item--panda {
+  top: 409px;
+  left: 915px;
+}
+
+/* ---------------------- */
+.map__scale {
+  position: absolute;
+  width: 32px;
+  height: 80px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  bottom: 5px;
+  right: 20px;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.map__minus,
+.map__plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+.map__plus {
+  font-size: 20px;
+  border-top: 1px solid #000;
+}
 
 /* footer */
 .footer {
