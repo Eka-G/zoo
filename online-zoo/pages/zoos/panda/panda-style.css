@@ -1,37 +1,37 @@
 @font-face {
   font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Regular.eot");
-  src: local("☺"), url("../../assets/fonts/Roboto-Regular.woff") format("woff"),
-    url("../../assets/fonts/Roboto-Regular.ttf") format("truetype"),
-    url("../../assets/fonts/Roboto-Regular.svg") format("svg");
+  src: url("../../../assets/fonts/Roboto-Regular.eot");
+  src: local("☺"), url("../../../assets/fonts/Roboto-Regular.woff") format("woff"),
+    url("../../../assets/fonts/Roboto-Regular.ttf") format("truetype"),
+    url("../../../assets/fonts/Roboto-Regular.svg") format("svg");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Medium.eot");
-  src: local("☺"), url("../../assets/fonts/Roboto-Medium.woff") format("woff"),
-    url("../../assets/fonts/Roboto-Medium.ttf") format("truetype"),
-    url("../../assets/fonts/Roboto-Medium.svg") format("svg");
+  src: url("../../../assets/fonts/Roboto-Medium.eot");
+  src: local("☺"), url("../../../assets/fonts/Roboto-Medium.woff") format("woff"),
+    url("../../../assets/fonts/Roboto-Medium.ttf") format("truetype"),
+    url("../../../assets/fonts/Roboto-Medium.svg") format("svg");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto-Black.eot");
-  src: local("☺"), url("../../assets/fonts/Roboto-Black.woff") format("woff"),
-    url("../../assets/fonts/Roboto-Black.ttf") format("truetype"),
-    url("../../assets/fonts/Roboto-Black.svg") format("svg");
+  src: url("../../../assets/fonts/Roboto-Black.eot");
+  src: local("☺"), url("../../../assets/fonts/Roboto-Black.woff") format("woff"),
+    url("../../../assets/fonts/Roboto-Black.ttf") format("truetype"),
+    url("../../../assets/fonts/Roboto-Black.svg") format("svg");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: "SceneW01-Black";
-  src: url("../../assets/fonts/Roboto-Black.eot");
-  src: local("☺"), url("../../assets/fonts/SceneW01-Black.ttf") format("truetype");
+  src: url("../../../assets/fonts/Roboto-Black.eot");
+  src: local("☺"), url("../../../assets/fonts/SceneW01-Black.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -161,6 +161,10 @@ li {
 }
 
 /* translation */
+.translation {
+  margin-bottom: 30px;
+}
+
 .translation__main {
   margin-bottom: 20px;
   width: 100%;
@@ -175,6 +179,82 @@ li {
 
 .translation__item {
   width: 100%;
+}
+
+/* information */
+.information {
+  display: grid;
+  grid-template-areas:  "post1 post1"
+                        "post2 post3"
+                        "post2 post3"
+                        "post4 post5"
+                        "post4 post5";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 20px;
+  text-align: left;
+  line-height: 19px;
+}
+
+.information__item {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 21px;
+  padding-left: 20px;
+  display: flex;
+  background-color: #a7e1ff;;
+}
+
+.information__title {
+  margin-bottom: 7px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.information__title--header {
+  display: inline;
+}
+
+.information__header {
+  grid-area: post1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px;
+}
+
+.information__population {
+  grid-area: post2;
+}
+
+.information__habitat {
+  grid-area: post3;
+}
+
+.information__nutrition {
+  grid-area: post4;
+}
+
+.information__facts {
+  grid-area: post5;
+}
+
+.information__arrow-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.information__arrow {
+  margin-left: 15px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: no-repeat 45% url(../../../assets/icons/slider-arrow.svg);
+  background-color: #ffe68e;
+  transition: all ease-out 0.3s;
+  transform: rotate(90deg);
+  cursor: pointer;
 }
 
 /* footer */
@@ -255,19 +335,19 @@ li {
 }
 
 .footer__facebook {
-  background-image: url("../../assets/icons/facebook.svg");
+  background-image: url("../../../assets/icons/facebook.svg");
 }
 
 .footer__instagram {
-  background-image: url("../../assets/icons/insta.svg");
+  background-image: url("../../../assets/icons/insta.svg");
 }
 
 .footer__twitter {
-  background-image: url("../../assets/icons/twitter.svg");
+  background-image: url("../../../assets/icons/twitter.svg");
 }
 
 .footer__youtube {
-  background-image: url("../../assets/icons/youtube.svg");
+  background-image: url("../../../assets/icons/youtube.svg");
 }
 
 /* ---------------------- */
