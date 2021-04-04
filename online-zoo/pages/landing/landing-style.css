@@ -469,7 +469,7 @@ li {
 .footer__right-side {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 49%;
 }
 
 .footer__nav {
@@ -540,7 +540,7 @@ li {
 }
 
 .footer__yem {
-  margin-right: 70px;
+  margin-right: 75px;
 }
 
 /* ---------------------- */
