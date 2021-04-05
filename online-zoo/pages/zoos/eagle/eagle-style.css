@@ -1,0 +1,470 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../../assets/fonts/Roboto-Regular.eot");
+  src: local("☺"), url("../../../assets/fonts/Roboto-Regular.woff") format("woff"),
+    url("../../../assets/fonts/Roboto-Regular.ttf") format("truetype"),
+    url("../../../assets/fonts/Roboto-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../../assets/fonts/Roboto-Medium.eot");
+  src: local("☺"), url("../../../assets/fonts/Roboto-Medium.woff") format("woff"),
+    url("../../../assets/fonts/Roboto-Medium.ttf") format("truetype"),
+    url("../../../assets/fonts/Roboto-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../../assets/fonts/Roboto-Black.eot");
+  src: local("☺"), url("../../../assets/fonts/Roboto-Black.woff") format("woff"),
+    url("../../../assets/fonts/Roboto-Black.ttf") format("truetype"),
+    url("../../../assets/fonts/Roboto-Black.svg") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #000;
+  background-color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.center-sections {
+  margin-top: 75px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.btn {
+  padding-top: 15px;
+  padding-right: 60px;
+  padding-bottom: 15px;
+  padding-left: 60px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  background-color: #70cb0e;
+  transition: all ease-out 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 0 30px #ffc800;
+}
+
+.link {
+  text-decoration: underline;
+  color: #267bde;
+  cursor: pointer;
+}
+
+/* Header */
+.container--header {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 57px;
+}
+
+.header__nav-list {
+  display: flex;
+}
+
+.header__nav-item {
+  margin-right: 35px;
+  transition: all ease-out 0.2s;
+}
+
+.header__nav-item:last-child {
+  margin-right: 0;
+}
+
+.header__nav-item:hover {
+  transform: translate(0px, -2px);
+}
+
+.header__nav-link {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.header__nav-item--active:hover {
+  transform: none;
+}
+
+.header__nav-item--active > .header__nav-link {
+  text-shadow: 0px 0px 3px #70cb0e;
+  cursor: default;
+}
+
+/* sidebar */
+.main {
+  position: relative;
+}
+
+.sidebar {
+  position: absolute;
+  height: 100%;
+}
+
+.sidebar__content {
+  margin-bottom: 50px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  position: sticky;
+  width: 111px;
+  height: 380px;
+  top: 288px;
+  background: no-repeat center url(../../../assets/images/zoos/aside__bg.png);
+}
+
+.sidebar__item {
+  margin-bottom: 6px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__link {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #70cb0e;
+}
+
+.sidebar__link--active {
+  width: 68px;
+  height: 68px;
+  border: 4px solid #70cb0e;
+  cursor: default;
+}
+
+.sidebar__alligator-link {
+  background-image: url(../../../assets/images/map/map__alligator.png);
+}
+
+.sidebar__panda-link {
+  background-image: url(../../../assets/images/map/map__panda.png);
+}
+
+.sidebar__eagle-link {
+  background-image: url(../../../assets/images/map/map__eagle.png);
+}
+
+.sidebar__gorilla-link {
+  background-image: url(../../../assets/images/map/map__gorilla.png);
+}
+
+.sidebar__pay-link {
+  background: no-repeat center/60% url(../../../assets/images/zoos/aside__icon.svg);
+}
+
+/* .sidebar__item:after {
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  position: absolute;
+  right: -70px;
+  content: attr(data-title);
+  
+  max-width: 111px;
+  background-color: #70cb0e;
+
+}
+
+.sidebar__item:before {
+  position: absolute;
+  display: block;
+  content: "";
+  right: -10px;
+  border: 5px solid transparent;
+  border-right: 9px solid #70cb0e;
+} */
+
+.sidebar__item:last-child {
+  margin-bottom: 0px;
+}
+
+.sidebar__item img {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar__item--pay a {
+  border: none;
+  background-color: #70cb0e;
+}
+
+/* animal */
+.animal__main-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.animal__title {
+  margin-bottom: 80px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 47px;
+}
+
+/* translation */
+.translation {
+  margin-bottom: 30px;
+}
+
+.translation__main {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 653px;
+}
+
+.translation__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.translation__item {
+  width: 100%;
+}
+
+/* information */
+.information {
+  display: grid;
+  grid-template-areas:  "post1 post1"
+                        "post2 post3"
+                        "post2 post3"
+                        "post4 post5"
+                        "post4 post5";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 20px;
+  text-align: left;
+  line-height: 19px;
+}
+
+.information__item {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 21px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #a7e1ff;;
+}
+
+.information__title {
+  margin-bottom: 7px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.information__title--header {
+  display: inline;
+}
+
+.information__header {
+  grid-area: post1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px;
+}
+
+.information__population {
+  grid-area: post2;
+}
+
+.information__habitat {
+  grid-area: post3;
+}
+
+.information__nutrition {
+  grid-area: post4;
+}
+
+.information__facts {
+  grid-area: post5;
+}
+
+.information__arrow-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.information__arrow {
+  margin-left: 15px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: no-repeat 45% url(../../../assets/icons/slider-arrow.svg);
+  background-color: #ffe68e;
+  transition: all ease-out 0.3s;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+/* footer */
+.footer {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #dff5b0;
+}
+
+.footer__content {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__left-side {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer__logo {
+  margin-right: 100px;
+}
+
+.footer__btn {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+/* ---------------------- */
+.footer__right-side {
+  display: flex;
+  justify-content: space-between;
+  width: 49%;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.footer__nav-item {
+  transition: all ease-out 0.3s;
+}
+
+.footer__nav-item:hover {
+  transform: translate(0px, -2px);
+}
+
+.footer__nav-item:first-child {
+  margin-bottom: 15px;
+}
+
+/* ---------------------- */
+.footer__media {
+  display: flex;
+}
+
+.footer__media-item {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all ease-out 0.3s;
+}
+
+.footer__media-item:hover {
+  transform: translate(0px, -10px);
+}
+
+.footer__media-item:first-child {
+  margin-left: 0;
+}
+
+.footer__facebook {
+  background-image: url("../../../assets/icons/facebook.svg");
+}
+
+.footer__instagram {
+  background-image: url("../../../assets/icons/insta.svg");
+}
+
+.footer__twitter {
+  background-image: url("../../../assets/icons/twitter.svg");
+}
+
+.footer__youtube {
+  background-image: url("../../../assets/icons/youtube.svg");
+}
+
+/* ---------------------- */
+.footer__rights {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.footer__rss {
+  margin-right: 50px;
+}
+
+.footer__yem {
+  margin-right: 75px;
+}
+
+/* ---------------------- */
+.footer__bg {
+  margin-left: -950px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  z-index: -1;
+}
