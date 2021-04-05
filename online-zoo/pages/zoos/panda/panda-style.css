@@ -28,14 +28,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "SceneW01-Black";
-  src: url("../../../assets/fonts/Roboto-Black.eot");
-  src: local("☺"), url("../../../assets/fonts/SceneW01-Black.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
 *,
 *::before,
 *::after {
@@ -142,6 +134,107 @@ li {
 .header__nav-item--active > .header__nav-link {
   text-shadow: 0px 0px 3px #70cb0e;
   cursor: default;
+}
+
+/* sidebar */
+.main {
+  position: relative;
+}
+
+.sidebar {
+  position: absolute;
+  height: 100%;
+}
+
+.sidebar__content {
+  margin-bottom: 50px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  position: sticky;
+  width: 111px;
+  height: 380px;
+  top: 288px;
+  background: no-repeat center url(../../../assets/images/zoos/aside__bg.png);
+}
+
+.sidebar__item {
+  margin-bottom: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+}
+
+.sidebar__link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #70cb0e;
+}
+
+.sidebar__link--active {
+  border: 4px solid #70cb0e;
+  cursor: default;
+}
+
+.sidebar__alligator-link {
+  background-image: url(../../../assets/images/map/map__alligator.png);
+}
+
+.sidebar__panda-link {
+  background-image: url(../../../assets/images/map/map__panda.png);
+}
+
+.sidebar__eagle-link {
+  background-image: url(../../../assets/images/map/map__eagle.png);
+}
+
+.sidebar__gorilla-link {
+  background-image: url(../../../assets/images/map/map__gorilla.png);
+}
+
+.sidebar__pay-link {
+  background: no-repeat center/60% url(../../../assets/images/zoos/aside__icon.svg);
+}
+
+/* .sidebar__item:after {
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  position: absolute;
+  right: -70px;
+  content: attr(data-title);
+  
+  max-width: 111px;
+  background-color: #70cb0e;
+
+}
+
+.sidebar__item:before {
+  position: absolute;
+  display: block;
+  content: "";
+  right: -10px;
+  border: 5px solid transparent;
+  border-right: 9px solid #70cb0e;
+} */
+
+.sidebar__item:last-child {
+  margin-bottom: 0px;
+}
+
+.sidebar__item img {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar__item--pay a {
+  border: none;
+  background-color: #70cb0e;
 }
 
 /* animal */
