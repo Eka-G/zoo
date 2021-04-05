@@ -173,11 +173,11 @@ li {
   border-radius: 50%;
   border: 2px solid #fff;
   background-color: #70cb0e;
+  cursor: pointer;
 }
 
-.sidebar__link--active {
+.sidebar__info:hover {
   border: 4px solid #70cb0e;
-  cursor: default;
 }
 
 .sidebar__alligator-link {
@@ -200,29 +200,6 @@ li {
   background: no-repeat center/60% url(../../../assets/images/zoos/aside__icon.svg);
 }
 
-/* .sidebar__item:after {
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-bottom: 4px;
-  padding-left: 8px;
-  position: absolute;
-  right: -70px;
-  content: attr(data-title);
-  
-  max-width: 111px;
-  background-color: #70cb0e;
-
-}
-
-.sidebar__item:before {
-  position: absolute;
-  display: block;
-  content: "";
-  right: -10px;
-  border: 5px solid transparent;
-  border-right: 9px solid #70cb0e;
-} */
-
 .sidebar__item:last-child {
   margin-bottom: 0px;
 }
@@ -235,6 +212,40 @@ li {
 .sidebar__item--pay a {
   border: none;
   background-color: #70cb0e;
+}
+
+.sidebar__info::before {
+  position: absolute;
+  display: none;
+  content: "";
+  top: 50%;
+  left: 60px;
+  margin-top: -4px;
+  border: 5px solid transparent;
+  border-right: 12px solid #70cb0e;
+}
+
+.sidebar__info::after {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  position: absolute;
+  display: none;
+  content: attr(data-info);
+  top: 12px;
+  left: 77px;
+  text-transform: none;
+  text-align: center;
+  width: 111px;
+  background-color: #70cb0e;
+}
+
+.sidebar__panda-link::after {
+  width: 99px;
+}
+
+.sidebar__info:hover:before,
+.sidebar__info:hover:after {
+  display: block;
 }
 
 /* animal */
@@ -277,11 +288,12 @@ li {
 /* information */
 .information {
   display: grid;
-  grid-template-areas:  "post1 post1"
-                        "post2 post3"
-                        "post2 post3"
-                        "post4 post5"
-                        "post4 post5";
+  grid-template-areas:
+    "post1 post1"
+    "post2 post3"
+    "post2 post3"
+    "post4 post5"
+    "post4 post5";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(5, 1fr);
   grid-gap: 20px;
@@ -296,7 +308,7 @@ li {
   padding-left: 20px;
   display: flex;
   justify-content: space-between;
-  background-color: #a7e1ff;;
+  background-color: #a7e1ff;
 }
 
 .information__title {
