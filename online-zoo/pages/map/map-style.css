@@ -149,6 +149,14 @@ li {
   position: relative;
 }
 
+.map__main-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -1;
+}
+
 .map__item {
   position: absolute;
   top: 0;
