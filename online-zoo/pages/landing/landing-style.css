@@ -155,6 +155,7 @@ li {
   display: flex;
   justify-content: center;
   transition: all ease-out 0.3s;
+  cursor: pointer;
 }
 
 .slider__item:hover {
