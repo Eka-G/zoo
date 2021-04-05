@@ -333,6 +333,10 @@ li {
   grid-gap: 30px 20px;
 }
 
+.slider__item {
+  cursor: pointer;
+}
+
 .pets__slider .slider__item {
   height: 300px;
 }
