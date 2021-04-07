@@ -167,6 +167,11 @@ li {
   height: 64px;
 }
 
+.sidebar__item--active .sidebar__link {
+  border: 4px solid #70cb0e;
+  cursor: default;
+}
+
 .sidebar__link {
   width: 100%;
   height: 100%;
@@ -288,11 +293,12 @@ li {
 /* information */
 .information {
   display: grid;
-  grid-template-areas:  "post1 post1"
-                        "post2 post3"
-                        "post2 post3"
-                        "post4 post5"
-                        "post4 post5";
+  grid-template-areas:
+    "post1 post1"
+    "post2 post3"
+    "post2 post3"
+    "post4 post5"
+    "post4 post5";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(5, 1fr);
   grid-gap: 20px;
@@ -307,7 +313,7 @@ li {
   padding-left: 20px;
   display: flex;
   justify-content: space-between;
-  background-color: #a7e1ff;;
+  background-color: #a7e1ff;
 }
 
 .information__title {
