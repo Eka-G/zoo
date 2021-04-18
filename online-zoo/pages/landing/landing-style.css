@@ -550,9 +550,9 @@ li {
 
 /* ---------------------- */
 .footer__bg {
-  margin-left: -950px;
   position: absolute;
+  width: 100%;
+  height: 100%;
   top: -20px;
-  left: 50%;
   z-index: -1;
 }
