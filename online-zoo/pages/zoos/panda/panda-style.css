@@ -182,28 +182,28 @@ li {
   cursor: pointer;
 }
 
-.sidebar__info:hover {
+.sidebar__link:hover {
   border: 4px solid #70cb0e;
 }
 
 .sidebar__alligator-link {
-  background-image: url(../../../assets/images/map/map__alligator.png);
+  background: no-repeat center url(../../../assets/images/map/map__alligator.png);
 }
 
 .sidebar__panda-link {
-  background-image: url(../../../assets/images/map/map__panda.png);
+  background: no-repeat center url(../../../assets/images/map/map__panda.png);
 }
 
 .sidebar__eagle-link {
-  background-image: url(../../../assets/images/map/map__eagle.png);
+  background: no-repeat center url(../../../assets/images/map/map__eagle.png);
 }
 
 .sidebar__gorilla-link {
-  background-image: url(../../../assets/images/map/map__gorilla.png);
+  background: no-repeat center url(../../../assets/images/map/map__gorilla.png);
 }
 
 .sidebar__pay-link {
-  background: no-repeat center/60% url(../../../assets/images/zoos/aside__icon.svg);
+  background: no-repeat center url(../../../assets/images/zoos/aside__icon.svg);
 }
 
 .sidebar__item:last-child {
@@ -216,7 +216,6 @@ li {
 }
 
 .sidebar__item--pay a {
-  border: none;
   background-color: #70cb0e;
 }
 
