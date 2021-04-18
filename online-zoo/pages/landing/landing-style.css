@@ -60,7 +60,7 @@ li {
 
 .body {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   color: #000;
 }
 
@@ -87,7 +87,7 @@ li {
 
 .title-h3 {
   margin-bottom: 80px;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 500;
   line-height: 47px;
 }
@@ -97,7 +97,7 @@ li {
   padding-right: 60px;
   padding-bottom: 15px;
   padding-left: 60px;
-  font-size: 18px;
+  font-size: 1.125rem;
   border: none;
   border-radius: 30px;
   background-color: #70cb0e;
@@ -172,7 +172,7 @@ li {
 }
 
 .slider__item:hover .slider__description {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .slider__img {
@@ -210,7 +210,7 @@ li {
 }
 
 .header__nav-link {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
 }
 
@@ -239,7 +239,7 @@ li {
 .favorite-animal__title {
   margin-bottom: 50px;
   font-family: "SceneW01-Black", sans-serif;
-  font-size: 70px;
+  font-size: 4.375rem;
   line-height: 84px;
   letter-spacing: 0.03em;
 }
@@ -423,7 +423,7 @@ li {
 .profile__money {
   margin-left: 15px;
   position: relative;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .profile__money::before {
@@ -445,7 +445,7 @@ li {
   padding-top: 80px;
   padding-bottom: 20px;
   position: relative;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 21px;
   background-color: #dff5b0;
 }

@@ -81,7 +81,7 @@ li {
   padding-right: 60px;
   padding-bottom: 15px;
   padding-left: 60px;
-  font-size: 18px;
+  font-size: 1.125rem;
   border: none;
   border-radius: 30px;
   background-color: #70cb0e;
@@ -129,7 +129,7 @@ li {
 }
 
 .header__nav-link {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
 }
 
@@ -177,7 +177,7 @@ li {
 .map__drc {
   top: 525px;
   left: 510px;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .map__china {
@@ -323,7 +323,7 @@ li {
   width: 32px;
   height: 80px;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
   bottom: 5px;
   right: 20px;
@@ -351,7 +351,7 @@ li {
   padding-bottom: 20px;
   position: relative;
   width: 100%;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 21px;
   background-color: #dff5b0;
 }
