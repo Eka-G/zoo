@@ -35,6 +35,8 @@
             <a href="https://www.figma.com/file/aBvQMVmI665DtzprpiniuH/online-zoo" class="header__nav-link">Design</a>
           </li>
         </ul>
+
+        <span class="header__burger"></span>
       </nav>
     </div>
   </header>
@@ -74,10 +76,15 @@
         <h2 class="animal__title">Gorilla</h2>
 
         <div class="translation">
+          <div class="sidebar__arrow"></div>
           <iframe class="translation__main" src="https://www.youtube.com/embed/rgXWDk7rh4w" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
+
+          <button class="translation__btn btn">
+            <a class="translation__btn-link" href="../../page-404/index.html">Feed</a>
+          </button>
 
           <div class="translation__list">
             <iframe class="translation__item" src="https://www.youtube.com/embed/rgXWDk7rh4w"
@@ -182,66 +189,74 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__content">
-        <div class="footer__left-side">
-          <a class="footer__logo" href="../../landing/landing-index.html">
-            <img src="../../../assets/icons/logo-footer.svg" alt="logo">
-          </a>
+        <a class="footer__logo" href="../../landing/landing-index.html">
+          <img src="../../../assets/icons/logo-footer.svg" alt="logo">
+        </a>
 
-          <button class="footer__btn btn">
-            <a class="footer__btn-link">Donate for volunteers</a>
-          </button>
-        </div>
+        <button class="footer__btn btn">
+          <a class="footer__btn-link">Donate for volunteers</a>
+        </button>
 
-        <div class="footer__right-side">
-          <nav class="footer__nav">
-            <ul>
-              <li class="footer__nav-item">
-                <a href="../../landing/landing-index.html" class="footer__nav-link">About</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="../../map/map-index.html" class="footer__nav-link">Мар</a>
-              </li>
-            </ul>
 
-            <ul>
-              <li class="footer__nav-item">
-                <a href="../../page-404/index.html" class="footer__nav-link">Contact us</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="../../page-404/index.html" class="footer__nav-link">Feedback</a>
-              </li>
-            </ul>
-          </nav>
+        <nav class="footer__nav">
+          <ul class="footer__nav--first">
+            <li class="footer__nav-item">
+              <a href="../../landing/landing-index.html" class="footer__nav-link">About</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="../../map/map-index.html" class="footer__nav-link">Мар</a>
+            </li>
+          </ul>
 
-          <div class="footer__media">
-            <a class="footer__media-item footer__instagram" href="http://instagram.com"></a>
+          <ul>
+            <li class="footer__nav-item">
+              <a href="../../page-404/index.html" class="footer__nav-link">Contact us</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="../../page-404/index.html" class="footer__nav-link">Feedback</a>
+            </li>
+          </ul>
+        </nav>
 
-            <a class="footer__media-item footer__facebook" href="http://facebook.com"></a>
+        <div class="footer__media">
+          <a class="footer__media-item footer__instagram" href="http://instagram.com"></a>
 
-            <a class="footer__media-item footer__twitter" href="http://twitter.com"></a>
+          <a class="footer__media-item footer__facebook" href="http://facebook.com"></a>
 
-            <a class="footer__media-item footer__youtube" href="http://youtube"></a>
-          </div>
+          <a class="footer__media-item footer__twitter" href="http://twitter.com"></a>
+
+          <a class="footer__media-item footer__youtube" href="http://youtube"></a>
         </div>
       </div>
 
       <div class="footer__rights">
-        <div>
           <img class="footer__rss" src="../../../assets/icons/logo-rsschool.svg" alt="RS School" title="RS School">
           <img class="footer__yem" src="../../../assets/icons/logo-yem.svg" alt="yem Digital" title="yem Digital">
-          <span>
-            Copyright ©RSSchool and ©Yem Digital 2020 - 2021
+
+          <button class="footer__btn footer__btn--tablet btn">
+            <a class="footer__btn-link">Donate for volunteers</a>
+          </button>
+
+        <div class="footer__rights-info">
+          <p class="footer__copyright">
+            Copyright ©RSSchool <span class="footer__copyright-and">and</span> ©Yem Digital 2020 - 2021
+          </p>
+
+          <span class="footer__author">
+            Grigoreva Margarita
           </span>
         </div>
-        <span class="footer__author">
-          Grigoreva Margarita
-        </span>
       </div>
-
     </div>
 
-    <img src="../../../assets/images/footer__bg.png" alt="background" class="footer__bg">
+
+    <picture>
+      <source srcset="../../../assets/images/footer__bg-phone.png" media="(max-width: 320px)">
+      <source srcset="../../../assets/images/footer__bg-tablet.png" media="(max-width: 768px)">
+
+      <img src="../../../assets/images/footer__bg.png" alt="background" class="footer__bg">
+    </picture>
+    
   </footer>
-</body>
 
 </html>
