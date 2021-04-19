@@ -567,19 +567,19 @@ li {
 }
 
 .footer__facebook {
-  background-image: url("../../../assets/icons/facebook.svg");
+  background-image: url("../../assets/icons/facebook.svg");
 }
 
 .footer__instagram {
-  background-image: url("../../../assets/icons/insta.svg");
+  background-image: url("../../assets/icons/insta.svg");
 }
 
 .footer__twitter {
-  background-image: url("../../../assets/icons/twitter.svg");
+  background-image: url("../../assets/icons/twitter.svg");
 }
 
 .footer__youtube {
-  background-image: url("../../../assets/icons/youtube.svg");
+  background-image: url("../../assets/icons/youtube.svg");
 }
 
 /* ---------------------- */
@@ -902,6 +902,10 @@ li {
   .container {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .container--header {
+    justify-content: space-between;
   }
 
     /* slider */
