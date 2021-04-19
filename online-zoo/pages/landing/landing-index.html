@@ -36,6 +36,8 @@
               <a href="https://www.figma.com/file/aBvQMVmI665DtzprpiniuH/online-zoo" class="header__nav-link">Design</a>
             </li>
           </ul>
+
+          <span class="header__burger"></span>
         </nav>
       </header>
 
@@ -98,42 +100,42 @@
           </div>
 
           <div class="slider__content">
-            <a class="slider__item" href="../zoos/panda/panda-index.html">
+            <a class="slider__item slider__item--panda" href="../zoos/panda/panda-index.html">
               <p class="slider__description">Panda, China</p>
               <img src="../../assets/images/pets__panda.jpg" alt="panda" class="slider__img">
             </a>
 
-            <a class="slider__item" href="../zoos/alligator/alligator-index.html">
+            <a class="slider__item slider__item--alligator" href="../zoos/alligator/alligator-index.html">
               <span class="slider__description">Alligator, USA</span>
               <img class="slider__img" src="../../assets/images/pets__alligator.jpg" alt="alligator">
             </a>
 
-            <a class="slider__item" href="../zoos/gorilla/gorilla-index.html">
+            <a class="slider__item slider__item--gorilla" href="../zoos/gorilla/gorilla-index.html">
               <span class="slider__description">Gorilla, Eastern DRC</span>
               <img class="slider__img" src="../../assets/images/pets__gorilla.jpg" alt="gorilla">
             </a>
 
-            <a class="slider__item">
+            <a class="slider__item slider__item--elephant">
               <span class="slider__description">Elephant, South Africa</span>
               <img class="slider__img" src="../../assets/images/pets__elephant.jpg" alt="elephant">
             </a>
 
-            <a class="slider__item">
+            <a class="slider__item slider__item--bear">
               <span class="slider__description">Polar bear, Canada</span>
               <img src="../../assets/images/pets__bear.jpg" alt="bear" class="slider__img">
             </a>
 
-            <a class="slider__item" href="../zoos/eagle/eagle-index.html">
+            <a class="slider__item slider__item--eagle" href="../zoos/eagle/eagle-index.html">
               <span class="slider__description">Bald eagle, USA</span>
               <img class="slider__img" src="../../assets/images/pets__eagle.jpg" alt="eagle">
             </a>
 
-            <a class="slider__item">
+            <a class="slider__item slider__item--owl">
               <span class="slider__description">Arctic snowy owl, Alaska</span>
               <img class="slider__img" src="../../assets/images/pets__owl.jpg" alt="owl">
             </a>
 
-            <a class="slider__item">
+            <a class="slider__item slider__item--penguin">
               <span class="slider__description">Penguin, USA</span>
               <img class="slider__img" src="../../assets/images/pets__penguin.jpg" alt="penguin">
             </a>
@@ -195,9 +197,8 @@
           </div>
         </div>
 
-        <img class="pay-feed__arrow pay-feed__arrow--top" src="../../assets/icons/pay-feed__arrow.svg" alt="arrow">
-        <img class="pay-feed__arrow pay-feed__arrow--bottom" src="../../assets/icons/pay-feed__arrow--bottom.svg"
-          alt="arrow">
+        <div class="pay-feed__arrow pay-feed__arrow--top"></div>
+        <div class="pay-feed__arrow pay-feed__arrow--bottom"></div>
       </section>
 
       <section class="testimonials center-sections">
@@ -285,65 +286,74 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__content">
-        <div class="footer__left-side">
-          <a class="footer__logo" href="landing-index.html">
-            <img src="../../assets/icons/logo-footer.svg" alt="logo">
-          </a>
+        <a class="footer__logo" href="../../landing/landing-index.html">
+          <img src="../../../assets/icons/logo-footer.svg" alt="logo">
+        </a>
 
-          <button class="footer__btn btn">
-            <a class="footer__btn-link">Donate for volunteers</a>
-          </button>
-        </div>
+        <button class="footer__btn btn">
+          <a class="footer__btn-link">Donate for volunteers</a>
+        </button>
 
-        <div class="footer__right-side">
-          <nav class="footer__nav">
-            <ul>
-              <li class="footer__nav-item">
-                <a href="../landing/landing-index.html" class="footer__nav-link">About</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="../map/map-index.html" class="footer__nav-link">Мар</a>
-              </li>
-            </ul>
 
-            <ul>
-              <li class="footer__nav-item">
-                <a href="../page-404/index.html" class="footer__nav-link">Contact us</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="../page-404/index.html" class="footer__nav-link">Feedback</a>
-              </li>
-            </ul>
-          </nav>
+        <nav class="footer__nav">
+          <ul class="footer__nav--first">
+            <li class="footer__nav-item">
+              <a href="../../landing/landing-index.html" class="footer__nav-link">About</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="../../map/map-index.html" class="footer__nav-link">Мар</a>
+            </li>
+          </ul>
 
-          <div class="footer__media">
-            <a class="footer__media-item footer__instagram" href="http://instagram.com"></a>
+          <ul>
+            <li class="footer__nav-item">
+              <a href="../../page-404/index.html" class="footer__nav-link">Contact us</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="../../page-404/index.html" class="footer__nav-link">Feedback</a>
+            </li>
+          </ul>
+        </nav>
 
-            <a class="footer__media-item footer__facebook" href="http://facebook.com"></a>
+        <div class="footer__media">
+          <a class="footer__media-item footer__instagram" href="http://instagram.com"></a>
 
-            <a class="footer__media-item footer__twitter" href="http://twitter.com"></a>
+          <a class="footer__media-item footer__facebook" href="http://facebook.com"></a>
 
-            <a class="footer__media-item footer__youtube" href="http://youtube"></a>
-          </div>
+          <a class="footer__media-item footer__twitter" href="http://twitter.com"></a>
+
+          <a class="footer__media-item footer__youtube" href="http://youtube"></a>
         </div>
       </div>
 
       <div class="footer__rights">
-        <div>
-          <img class="footer__rss" src="../../assets/icons/logo-rsschool.svg" alt="RS School" title="RS School">
-          <img class="footer__yem" src="../../assets/icons/logo-yem.svg" alt="yem Digital" title="yem Digital">
-          <span>
-            Copyright ©RSSchool and ©Yem Digital 2020 - 2021
+          <img class="footer__rss" src="../../../assets/icons/logo-rsschool.svg" alt="RS School" title="RS School">
+          <img class="footer__yem" src="../../../assets/icons/logo-yem.svg" alt="yem Digital" title="yem Digital">
+
+          <button class="footer__btn footer__btn--tablet btn">
+            <a class="footer__btn-link">Donate for volunteers</a>
+          </button>
+
+        <div class="footer__rights-info">
+          <p class="footer__copyright">
+            Copyright ©RSSchool <span class="footer__copyright-and">and</span> ©Yem Digital 2020 - 2021
+          </p>
+
+          <span class="footer__author">
+            Grigoreva Margarita
           </span>
         </div>
-        <span class="footer__author">
-          Grigoreva Margarita
-        </span>
       </div>
-
     </div>
 
-    <img class="footer__bg" src="../../assets/images/footer__bg.png" alt="background">
+
+    <picture>
+      <source srcset="../../../assets/images/footer__bg-phone.png" media="(max-width: 320px)">
+      <source srcset="../../../assets/images/footer__bg-tablet.png" media="(max-width: 768px)">
+
+      <img src="../../../assets/images/footer__bg.png" alt="background" class="footer__bg">
+    </picture>
+    
   </footer>
 </body>
 
