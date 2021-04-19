@@ -508,10 +508,6 @@ li {
   align-items: flex-start;
 }
 
-/* .footer__logo {
-  margin-right: 100px;
-} */
-
 .footer__btn {
   margin-right: 50px;
   padding-left: 28px;
@@ -711,6 +707,10 @@ li {
   }
 
   /* footer */
+  .footer__content {
+    flex-wrap: wrap;
+  }    
+
   .footer__btn {
     margin-right: 10px;
   }
@@ -961,7 +961,7 @@ li {
   /* pay-feed */
   .pay-feed__item {
     margin-bottom: 85px;
-    width: 100%;
+    width: 70%;
   }
 
   .pay-feed__item:last-child {
