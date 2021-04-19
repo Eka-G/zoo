@@ -485,7 +485,11 @@ li {
 @media (max-width: 1200px) {
 
   .container--map {
-    margin: 0 calc((84% - 100vh) / 2 - 62px);
+    margin: 0 calc((79% - 100vh) / 2 - 62px);
+  }
+
+  .footer__content {
+    margin-bottom: 70px;
   }
 
 }
@@ -585,6 +589,56 @@ li {
 
   .map__bg {
     background: no-repeat center url(../../assets/images/map/map--tablet.png);
+  }
+
+  .map__item--alligator {
+    top: 387px;
+    left: 373px;
+  }
+
+  .map__item--gorilla {
+    top: 467px;
+    left: 653px;
+  }
+
+  .map__item--panda {
+    top: 382px;
+    left: 868px;
+  }
+
+  .map__usa {
+    text-transform: uppercase;
+    top: 374px;
+    left: 293px;
+  }
+
+  .map__drc {
+    top: 503px;
+    left: 532px;
+  }
+
+  .map__china {
+    top: 393px;
+    left: 797px;
+  }
+
+  .map__mark {
+    transform: scale(0.8)
+  }
+
+  .map__mark-alligator {
+    top: 391px;
+    left: 350px;
+  }
+
+  .map__mark-gorilla {
+    top: 482px;
+    left: 629px;
+  }
+
+  .map__mark-panda {
+    top: 393px;
+    left: 846px;
   }
 
   .map__scale {
@@ -692,9 +746,35 @@ li {
 }
 
 @media (max-width: 320px) {
+
+  .container--map {
+    margin: 0 calc((92% - 100vh) / 2 - 62px);
+  }
+
+  /* map */
+  .map__item--alligator {
+    left: 362px;
+  }
+
+  .map__mark-alligator {
+    left: 339px;
+  }
+
+  .map__mark-gorilla {
+    left: 618px;
+  }
+
+  .map__usa {
+    left: 270px;
+  }
+
+  .map__drc {
+    left: 521px;
+  }
+
   /* footer */
   .footer__logo {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     order: 0;
   }
 
@@ -737,6 +817,7 @@ li {
   }
 
   .footer__rights-info {
+    margin-top: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
