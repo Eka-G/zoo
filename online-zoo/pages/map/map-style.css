@@ -73,6 +73,7 @@ li {
 }
 
 .container--map {
+  margin: 0 calc((100% - 100vh) / 2 - 62px);
   position: relative;
 }
 
@@ -151,6 +152,7 @@ li {
   margin-top: 95px;
   margin-bottom: 95px;
   position: relative;
+  overflow: hidden;
 }
 
 .map__main-title {
@@ -480,8 +482,11 @@ li {
 }
 
 /*adaptive*/
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
 
+  .container--map {
+    margin: 0 calc((84% - 100vh) / 2 - 62px);
+  }
 
 }
 
@@ -564,8 +569,26 @@ li {
 
 @media (max-width: 640px) {
 
+  .container--map {
+    margin: 0 calc((55% - 100vh) / 2 - 62px);
+  }
+
   .main {
     overflow: hidden;
+  }
+
+  /* map */
+  .map {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .map__bg {
+    background: no-repeat center url(../../assets/images/map/map--tablet.png);
+  }
+
+  .map__scale {
+    bottom: 72px;
   }
 
   /* header */
