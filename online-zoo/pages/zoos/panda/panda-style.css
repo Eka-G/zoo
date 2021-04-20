@@ -315,6 +315,10 @@ li {
   width: 100%;
 }
 
+.translation__btn {
+  display: none;
+}
+
 /* information */
 .information {
   display: grid;
@@ -629,10 +633,6 @@ li {
     height: 167px;
   }
 
-  .translation__btn {
-    display: none;
-  }
-
   /* information */
   .information__header {
     grid-template-columns: 1fr;
@@ -648,12 +648,28 @@ li {
     grid-template-areas:
         "post1"
         "post2"
-        "post3"
         "post4"
+        "post3"
         "post5";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
+
+  /* .information__population {
+    order: 0;
+  }
+
+  .information__habitat {
+    order: 1;
+  }
+
+  .information__nutrition {
+    order: 2;
+  }
+
+  .information__facts {
+    order: 3;
+  } */
 
 }
 
