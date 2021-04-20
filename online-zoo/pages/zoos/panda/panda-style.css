@@ -654,23 +654,7 @@ li {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
-
-  /* .information__population {
-    order: 0;
-  }
-
-  .information__habitat {
-    order: 1;
-  }
-
-  .information__nutrition {
-    order: 2;
-  }
-
-  .information__facts {
-    order: 3;
-  } */
-
+  
 }
 
 @media (max-width: 576px) {

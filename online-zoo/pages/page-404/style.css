@@ -39,10 +39,14 @@ a {
 .error {
   margin-top: 190px;
   margin-bottom: 190px;
+  padding-left: 45px;
+  padding-right: 45px;
+  width: 100%;
 }
 
 .error__img {
   margin-bottom: 25px;
+  max-width: 100%;
 }
 
 .error__titile {
@@ -61,4 +65,55 @@ a {
 
 .error__link:hover {
   color: #000;
+}
+
+/*adaptive*/
+@media (max-width: 1200px) {
+
+  .error {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .error {
+    margin-top: 100px;
+  }
+
+  .error__img {
+    margin-bottom: 20px;
+  }
+
+  .error__titile {
+    margin-bottom: 8px;
+  }
+}
+
+
+@media (max-width: 320px) {
+
+  .error {
+    margin-top: 135px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+  }
+
+  .error__img {
+    margin-bottom: 10px;
+  }
+
+  .error__titile {
+    margin-bottom: 5px;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .error__link {
+    font-size: 1rem;
+  }
+  
 }

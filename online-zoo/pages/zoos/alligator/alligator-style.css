@@ -652,8 +652,8 @@ li {
     grid-template-areas:
         "post1"
         "post2"
-        "post3"
         "post4"
+        "post3"
         "post5";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
