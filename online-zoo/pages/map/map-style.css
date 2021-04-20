@@ -503,19 +503,19 @@ li {
 }
 
 .footer__facebook {
-  background-image: url("../../../assets/icons/facebook.svg");
+  background-image: url("../../assets/icons/facebook.svg");
 }
 
 .footer__instagram {
-  background-image: url("../../../assets/icons/insta.svg");
+  background-image: url("../../assets/icons/insta.svg");
 }
 
 .footer__twitter {
-  background-image: url("../../../assets/icons/twitter.svg");
+  background-image: url("../../assets/icons/twitter.svg");
 }
 
 .footer__youtube {
-  background-image: url("../../../assets/icons/youtube.svg");
+  background-image: url("../../assets/icons/youtube.svg");
 }
 
 /* ---------------------- */
@@ -547,10 +547,6 @@ li {
 
 /*adaptive*/
 @media (max-width: 1200px) {
-
-  /* .container--map {
-    margin: 0 calc((79% - 100vh) / 2 - 62px);
-  } */
 
   .footer__content {
     margin-bottom: 70px;
@@ -711,56 +707,6 @@ li {
 .map__china {
   left: 516px;
 }
-
-  /* .map__item--alligator {
-    top: 387px;
-    left: 373px;
-  }
-
-  .map__item--gorilla {
-    top: 467px;
-    left: 653px;
-  }
-
-  .map__item--panda {
-    top: 382px;
-    left: 868px;
-  }
-
-  .map__usa {
-    text-transform: uppercase;
-    top: 374px;
-    left: 293px;
-  }
-
-  .map__drc {
-    top: 503px;
-    left: 532px;
-  }
-
-  .map__china {
-    top: 393px;
-    left: 797px;
-  }
-
-  .map__mark {
-    transform: scale(0.8)
-  }
-
-  .map__mark-alligator {
-    top: 391px;
-    left: 350px;
-  }
-
-  .map__mark-gorilla {
-    top: 482px;
-    left: 629px;
-  }
-
-  .map__mark-panda {
-    top: 393px;
-    left: 846px;
-  } */
 
   .map__scale {
     bottom: 72px;
