@@ -252,7 +252,7 @@ li {
   text-transform: uppercase;
 }
 
-.map__animal-name::before {
+/* .map__animal-name::before {
   position: absolute;
   display: none;
   content: "";
@@ -275,9 +275,9 @@ li {
   text-align: center;
   width: 111px;
   background-color: #70cb0e;
-}
+} */
 
-.map__item--panda .map__animal-name::after {
+/* .map__item--panda .map__animal-name::after {
   right: -28px;
   width: 90px;
 }
@@ -290,7 +290,7 @@ li {
   left: 45px;
   border-right: 0;
   border-left: 12px solid #70cb0e;
-}
+} */
 
 .map__item--animal:hover .map__animal-pic {
   border: 4px solid #70cb0e;
@@ -355,6 +355,70 @@ li {
 .map__plus {
   font-size: 20px;
   border-top: 1px solid #000;
+}
+
+/* tooltip */
+.tooltip {
+  position: absolute;
+  padding-top: 7px;
+  padding-right: 11px;
+  padding-bottom: 7px;
+  padding-left: 11px;
+  display: none;
+  top: 0;
+  left: 0;
+  margin-left: 80px;
+  min-width: 120px;
+  text-align: center;
+  background-color: #70cb0e;
+}
+
+.tooltip__text {
+  margin-bottom: 5px;
+}
+
+.tooltip__animal {
+  display: block;
+  text-transform: uppercase;
+}
+
+.tooltip__btn {
+  padding-top: 9px;
+  padding-right: 21px;
+  padding-bottom: 10px;
+  padding-left: 22px;
+  display: none;
+  background-color: #ffb600;
+}
+
+.tooltip__btn:hover {
+  box-shadow: 0 0 10px #ffc800;
+}
+
+.tooltip::before {
+  position: absolute;
+  margin-top: -4px;
+  margin-left: -15px;
+  display: block;
+  content: "";
+  top: 50%;
+  left: 0;
+  border: 5px solid transparent;
+  border-right: 12px solid #70cb0e;
+}
+
+.tooltip--left {
+  left: -125%;
+}
+
+.tooltip--left::before {
+  margin-left: 100%;
+  border-right: none;
+  border-left: 12px solid #70cb0e;
+}
+
+.map__item:hover .tooltip {
+  display: block;
 }
 
 /* footer */
@@ -574,7 +638,7 @@ li {
 @media (max-width: 640px) {
 
   .container--map {
-    margin: 0 calc((55% - 100vh) / 2 - 62px);
+    margin: 0 calc((79% - 100vh) / 2 - 62px);
   }
 
   .main {
@@ -643,6 +707,35 @@ li {
 
   .map__scale {
     bottom: 72px;
+  }
+
+  /* tooltip */
+  .tooltip {
+    margin-top: -15px;
+    min-width: 170px;
+  }
+
+  .tooltip__btn {
+    display: block;
+  }
+  
+  .tooltip__btn:hover {
+    box-shadow: 0 0 10px #ffc800;
+  }
+  
+  .tooltip::before {
+    margin-top: -4px;
+    margin-left: -15px;
+    top: 50%;
+    left: 0;
+  }
+  
+  .tooltip--left {
+    left: -159%;
+  }
+  
+  .tooltip--left::before {
+    margin-left: 100%;
   }
 
   /* header */
@@ -748,7 +841,7 @@ li {
 @media (max-width: 320px) {
 
   .container--map {
-    margin: 0 calc((92% - 100vh) / 2 - 62px);
+    margin: 0 calc((110% - 100vh) / 2 - 62px);
   }
 
   /* map */
