@@ -41,7 +41,10 @@
     </div>
   </header>
 
-  <main class="map">
+  <main class="map__wrapper">
+    <div class="map">
+
+    
     <div class="container container--map">
       <h1 class="map__main-title">Online zoo</h1>
       <div class="map__bg">
@@ -137,11 +140,15 @@
         </div>
       </div>
     </div>
+  </div>
 
+  <div class="map__scale--wrapper">
+    <!-- sticky назначен обертке map__scale--wrapper, у обертки нулевая ширина, чтобы не вытесняла карту -->
     <div class="map__scale">
       <div class="map__minus">—</div>
       <div class="map__plus">+</div>
     </div>
+  </div>
   </main>
 
   <footer class="footer">

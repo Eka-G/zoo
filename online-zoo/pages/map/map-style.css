@@ -147,9 +147,17 @@ li {
 }
 
 /* map */
+.map__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100%;
+}
+
 .map {
-  margin-top: 95px;
-  margin-bottom: 95px;
+  margin: 0 auto;
+  padding-top: 95px;
+  padding-bottom: 95px;
   position: relative;
   overflow: hidden;
 }
@@ -165,6 +173,7 @@ li {
 .map__bg {
   width: 1162px;
   height: 747px;
+  overflow: hidden;
   background: no-repeat center url(../../assets/images/map/map.png);
 }
 
@@ -251,46 +260,6 @@ li {
   text-transform: uppercase;
 }
 
-/* .map__animal-name::before {
-  position: absolute;
-  display: none;
-  content: "";
-  top: 50%;
-  left: 67px;
-  margin-top: -4px;
-  border: 5px solid transparent;
-  border-right: 12px solid #70cb0e;
-}
-
-.map__animal-name::after {
-  padding-top: 4px;
-  padding-bottom: 4px;
-  position: absolute;
-  display: none;
-  content: attr(data-info);
-  top: 10px;
-  right: -50px;
-  text-transform: none;
-  text-align: center;
-  width: 111px;
-  background-color: #70cb0e;
-} */
-
-/* .map__item--panda .map__animal-name::after {
-  right: -28px;
-  width: 90px;
-}
-
-.map__animal-name--left::after {
-  right: 82px;
-}
-
-.map__animal-name--left::before {
-  left: 45px;
-  border-right: 0;
-  border-left: 12px solid #70cb0e;
-} */
-
 .map__item--animal:hover .map__animal-pic {
   border: 4px solid #70cb0e;
 }
@@ -329,18 +298,28 @@ li {
 }
 
 /* ---------------------- */
+.map__scale--wrapper {
+  position: sticky;
+  margin-bottom: 100px;
+  width: 0;
+  /* нулевая ширина, чтобы не вытеснял карту */
+  height: 80px;
+  bottom: 20px;
+}
+
 .map__scale {
-  position: absolute;
+  position: absolute; 
   width: 32px;
   height: 80px;
+  bottom: 0;
+  right: 20px;
   text-align: center;
   font-size: 1.125rem;
   font-weight: 500;
-  bottom: 5px;
-  right: 20px;
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
   border-radius: 5px;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .map__minus,
@@ -547,6 +526,12 @@ li {
 /*adaptive*/
 @media (max-width: 1200px) {
 
+  .container--map {
+    margin: 0 calc((100% - 1162px) / 2);
+    position: relative;
+  }
+
+  /* footer */
   .footer__content {
     margin-bottom: 70px;
   }
@@ -642,8 +627,8 @@ li {
 
   /* map */
   .map {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
   }
 
   .map__bg {
@@ -652,22 +637,22 @@ li {
 
   .map__item--eagle {
     top: 397px;
-    left: 158px;
+    left: 160px;
   }
 
   .map__item--alligator {
     top: 385px;
-    left: 369px;
+    left: 371px;
   }
 
   .map__item--gorilla {
     top: 465px;
-    left: 650px;
+    left: 652px;
   }
 
   .map__item--panda {
     top: 382px;
-    left: 864px;
+    left: 866px;
   }
 
   .map__mark {
@@ -675,40 +660,36 @@ li {
   }
 
   .map__mark-eagle {
-    left: 228px;
+    left: 230px;
   }
 
   .map__mark-alligator {
     top: 392px;
-    left: 346px;
+    left: 348px;
   }
 
   .map__mark-gorilla {
     top: 482px;
-    left: 626px;
+    left: 628px;
   }
 
   .map__mark-panda {
     top: 393px;
-    left: 843px;
+    left: 845px;
   }
 
   .map__usa {
     top: 375px;
-    left: 289px;
+    left: 291px;
   }
 
   .map__drc {
     top: 503px;
-    left: 530px;
+    left: 532px;
   }
 
   .map__china {
-    left: 794px;
-  }
-
-  .map__scale {
-    bottom: 72px;
+    left: 796px;
   }
 
   /* tooltip */
@@ -848,11 +829,11 @@ li {
 
   /* map */
   .map__item--alligator {
-    left: 359px;
+    left: 360px;
   }
 
   .map__mark-alligator {
-    left: 339px;
+    left: 340px;
   }
 
   .map__mark-gorilla {
@@ -860,7 +841,7 @@ li {
   }
 
   .map__usa {
-    left: 280px;
+    left: 281px;
   }
 
   .map__drc {
