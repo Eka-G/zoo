@@ -7,10 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Online-zoo</title>
   <link rel="stylesheet" href="../normalize.css">
+  <link rel="stylesheet" href="../modal.css">
   <link rel="stylesheet" href="landing-style.css">
 </head>
 
-<body class="body">
+<body class="body no-scrollable">
   <div class="top-wrapper">
     <div class="container">
       <header class="header">
@@ -327,12 +328,12 @@
       </div>
 
       <div class="footer__rights">
-          <img class="footer__rss" src="../../assets/icons/logo-rsschool.svg" alt="RS School" title="RS School">
-          <img class="footer__yem" src="../../assets/icons/logo-yem.svg" alt="yem Digital" title="yem Digital">
+        <img class="footer__rss" src="../../assets/icons/logo-rsschool.svg" alt="RS School" title="RS School">
+        <img class="footer__yem" src="../../assets/icons/logo-yem.svg" alt="yem Digital" title="yem Digital">
 
-          <button class="footer__btn footer__btn--tablet btn">
-            <a class="footer__btn-link">Donate for volunteers</a>
-          </button>
+        <button class="footer__btn footer__btn--tablet btn">
+          <a class="footer__btn-link">Donate for volunteers</a>
+        </button>
 
         <div class="footer__rights-info">
           <p class="footer__copyright">
@@ -353,8 +354,22 @@
 
       <img src="../../assets/images/footer__bg.png" alt="background" class="footer__bg">
     </picture>
-    
+
   </footer>
+
+  <div class="modals js-modals">
+    <div class="modals__container" data-modal-name="feedback">
+      <div class="modals__header">
+        <div class="modals__close js-close"></div>
+      </div>
+
+      <div class="modals__content">
+        <!-- modal content -->
+      </div>
+    </div>
+  </div>
+
+  <script src="../modals.js"></script>
 </body>
 
 </html>
