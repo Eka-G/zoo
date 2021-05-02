@@ -1,10 +1,19 @@
+.btn--invalid {
+  background-color: #e7d2b7;
+  cursor: not-allowed;
+}
+
+.btn--invalid:hover {
+  box-shadow: none;
+}
+
 .modals {
-  position: absolute;
+  position: fixed;
   display: none;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 100;
 }
@@ -31,6 +40,7 @@
 }
 
 .modals__header {
+  margin-bottom: 5px;
   display: flex;
   justify-content: flex-end;
 }
@@ -39,7 +49,7 @@
   position: relative;;
   display: inline-block;
   margin-top: 15px;
-  margin-right: 15px;
+  margin-right: 20px;
   right: 0;
   width: 27px;
   height: 27px;
@@ -53,7 +63,7 @@
   content: "";
   top: calc(50% - 1px);
   left: 0;
-  width: 100%;
+  width: 130%;
   height: 1px;
   background-color: #000;
   transform: rotate(45deg);
@@ -61,4 +71,44 @@
 
 .modals__close::after {
   transform: rotate(-45deg);
+}
+
+.modals__content {
+  display: flex;
+  margin-right: 80px;
+  margin-left: 80px;
+  justify-content: center;
+}
+
+.modals__content--feedback {
+  margin-bottom: 50px;
+}
+
+.form {
+  width: 100%;
+  text-align: center;
+}
+
+.form__item {
+  margin-bottom: 8px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #9ca498;
+  background-color: #dff5b0;
+}
+
+.form__item :-webkit-autofill {
+  background-color: #dff5b0;
+}
+
+.form__item--feedback {
+  margin-bottom: 0;
+  height: 180px;
+  resize: none;
+}
+
+.modals__btn {
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

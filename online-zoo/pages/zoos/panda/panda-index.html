@@ -8,6 +8,7 @@
   <title>Online-zoo</title>
   <link rel="stylesheet" href="../../normalize.css">
   <link rel="stylesheet" href="panda-style.css">
+  <link rel="stylesheet" href="../../modal.css">
 </head>
 
 <body class="body">
@@ -208,7 +209,7 @@
               <a href="../../page-404/index.html" class="footer__nav-link">Contact us</a>
             </li>
             <li class="footer__nav-item">
-              <a href="../../page-404/index.html" class="footer__nav-link">Feedback</a>
+              <a id="nav-feedback" href="#" class="footer__nav-link" onclick="return false">Feedback</a>
             </li>
           </ul>
         </nav>
@@ -253,6 +254,27 @@
     </picture>
     
   </footer>
+
+  <div class="modals js-modals">
+    <div class="modals__container" data-modal-name="feedback">
+      <div class="modals__header">
+        <div class="modals__close js-close"></div>
+      </div>
+
+      <div class="modals__content modals__content--feedback">
+        <form class="form" action="">
+          <input id="name" class="form__item" type="text" placeholder="Name" required>
+          <br>
+          <input id="email" class="form__item" type="email" placeholder="Email" required>
+          <br>
+          <textarea id="text-feedback" class="form__item form__item--feedback" placeholder="Your text here (300 max)" required></textarea>
+          <button id="send" class="btn modals__btn btn--invalid" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../modals.js"></script>
 </body>
 
 </html>
