@@ -1,12 +1,3 @@
-.btn--invalid {
-  background-color: #e7d2b7;
-  cursor: not-allowed;
-}
-
-.btn--invalid:hover {
-  box-shadow: none;
-}
-
 .modals {
   position: fixed;
   display: none;
@@ -30,6 +21,7 @@
 
 .modals__container {
   position: absolute;
+  display: none;
   min-width: 630px;
   min-height: 339px;
   background-color: #fff;
@@ -40,13 +32,12 @@
 }
 
 .modals__header {
-  margin-bottom: 5px;
   display: flex;
   justify-content: flex-end;
 }
 
 .modals__close {
-  position: relative;;
+  position: relative;
   display: inline-block;
   margin-top: 15px;
   margin-right: 20px;
@@ -75,40 +66,5 @@
 
 .modals__content {
   display: flex;
-  margin-right: 80px;
-  margin-left: 80px;
   justify-content: center;
-}
-
-.modals__content--feedback {
-  margin-bottom: 50px;
-}
-
-.form {
-  width: 100%;
-  text-align: center;
-}
-
-.form__item {
-  margin-bottom: 8px;
-  padding: 10px;
-  width: 100%;
-  border: 1px solid #9ca498;
-  background-color: #dff5b0;
-}
-
-.form__item :-webkit-autofill {
-  background-color: #dff5b0;
-}
-
-.form__item--feedback {
-  margin-bottom: 0;
-  height: 180px;
-  resize: none;
-}
-
-.modals__btn {
-  margin-top: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
