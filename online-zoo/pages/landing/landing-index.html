@@ -59,27 +59,29 @@
       <section class="how-works">
         <h2 class="title-h3">How it works</h2>
 
-        <ul class="how-works__gallery">
-          <li class="how-works__bg">
-            <img src="../../assets/images/how-works__bg.png" alt="background">
-          </li>
+        <div class="how-works__carousel">
+          <ul id="how-works-carousel" class="how-works__gallery">
+            <li class="how-works__bg">
+              <img src="../../assets/images/how-works__bg.png" alt="background">
+            </li>
 
-          <li class="how-works__card">
-            <img src="../../assets/images/favorite-animal__eagle.jpg" alt="eagle" class="how-works__img">
-          </li>
-          <li class="how-works__card how-works__card--middle">
-            <img src="../../assets/images/favorite-animal__tiger.jpg" alt="tiger" class="how-works__img">
-          </li>
-          <li class="how-works__card how-works__card--active">
-            <img src="../../assets/images/favorite-animal__panda.jpg" alt="panda" class="how-works__img">
-          </li>
-          <li class="how-works__card how-works__card--middle">
-            <img src="../../assets/images/favorite-animal__monkey.jpg" alt="monkey" class="how-works__img">
-          </li>
-          <li class="how-works__card">
-            <img src="../../assets/images/favorite-animal__elephant.jpg" alt="elephant" class="how-works__img">
-          </li>
-        </ul>
+            <li class="how-works__card" data-pos="-2">
+              <img src="../../assets/images/favorite-animal__eagle.jpg" alt="eagle" class="how-works__img">
+            </li>
+            <li class="how-works__card" data-pos="-1">
+              <img src="../../assets/images/favorite-animal__tiger.jpg" alt="tiger" class="how-works__img">
+            </li>
+            <li class="how-works__card" data-pos="0">
+              <img src="../../assets/images/favorite-animal__panda.jpg" alt="panda" class="how-works__img">
+            </li>
+            <li class="how-works__card" data-pos="1">
+              <img src="../../assets/images/favorite-animal__monkey.jpg" alt="monkey" class="how-works__img">
+            </li>
+            <li class="how-works__card" data-pos="2">
+              <img src="../../assets/images/favorite-animal__elephant.jpg" alt="elephant" class="how-works__img">
+            </li>
+          </ul>
+        </div>
 
         <p class="how-works__text">
           The application Оnline zoo will allow you to watch zoos' and nature reserves' inhabitants in live. Currently,
@@ -369,7 +371,8 @@
           <br>
           <input id="email" class="form__item form__item--colored" type="email" placeholder="Email" required>
           <br>
-          <textarea id="text-feedback" class="form__item form__item--feedback form__item--colored" placeholder="Your text here (300 max)" maxlength="300" required></textarea>
+          <textarea id="text-feedback" class="form__item form__item--feedback form__item--colored"
+            placeholder="Your text here (300 max)" maxlength="300" required></textarea>
           <button class="btn modals__btn" type="submit">Submit</button>
         </form>
       </div>
@@ -390,14 +393,16 @@
           </select>
 
           <div class="form__money">
-            <input id="donate" class="form__item form__donate-sum" type="number" placeholder="Amount" max="9999" required>
+            <input id="donate" class="form__item form__donate-sum" type="number" placeholder="Amount" max="9999"
+              required>
             <select name="donate" class="form__item form__currency">
               <option value="alligator">usd</option>
               <option value="eagle">eur</option>
             </select>
           </div>
 
-          <textarea class="form__item form__item--text-donate" placeholder="Your text here" maxlength="280" required></textarea>
+          <textarea class="form__item form__item--text-donate" placeholder="Your text here" maxlength="280"
+            required></textarea>
           <button id="next-donate" class="btn modals__btn" type="submit">Next</button>
         </form>
       </div>
@@ -412,15 +417,19 @@
         <form id="lalal" class="form">
           <div class="form__cards-wrapper">
             <div class="form__card form__card-front">
-              <input id="card" class="form__item form__central-item" type="number" placeholder="Сard Number" data-limit="16" required>
-              <input class="form__item form__central-item form__short-item" type="number" placeholder="MM" min="1" max="12" data-limit="2" required>
-              <input class="form__item form__central-item form__short-item" type="number" placeholder="YY" min="21" max="40" data-limit="2" required>
+              <input id="card" class="form__item form__central-item" type="number" placeholder="Сard Number"
+                data-limit="16" required>
+              <input class="form__item form__central-item form__short-item" type="number" placeholder="MM" min="1"
+                max="12" data-limit="2" required>
+              <input class="form__item form__central-item form__short-item" type="number" placeholder="YY" min="21"
+                max="40" data-limit="2" required>
               <input class="form__item form__central-item" type="text" placeholder="Сardholder Name" required>
             </div>
 
             <div class="form__card form__card-underside">
               <div class="form__cvv">
-                <input id="" class="form__item form__central-item form__cvv-item" type="number" placeholder="CVC" max="999"  data-limit="3" required>
+                <input id="" class="form__item form__central-item form__cvv-item" type="number" placeholder="CVC"
+                  max="999" data-limit="3" required>
               </div>
             </div>
           </div>

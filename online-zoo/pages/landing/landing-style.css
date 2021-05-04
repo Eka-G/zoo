@@ -317,31 +317,33 @@ li {
   top: 11%;
   width: 250px;
   height: 350px;
+  transition: all linear 0.3s;
   z-index: 0;
 }
 
-.how-works__card:nth-child(2) {
+.how-works__card[data-pos="-2"] {
   left: -1%;
 }
 
-.how-works__card:nth-child(3) {
+.how-works__card[data-pos="-1"] {
   left: 18%;
 }
 
-.how-works__card:nth-child(5) {
+.how-works__card[data-pos="1"] {
   right: 20%;
 }
 
-.how-works__card:last-child {
+.how-works__card[data-pos="2"] {
   right: 1%;
 }
 
-.how-works__card--middle {
+.how-works__card[data-pos="-1"],
+.how-works__card[data-pos="1"] {
   transform: scale(1.15);
   z-index: 1;
 }
 
-.how-works__card--active {
+.how-works__card[data-pos="0"] {
   left: 50%;
   margin-left: -140px;
   transform: scale(1.29);
@@ -411,7 +413,7 @@ li {
   position: absolute;
   display: block;
   content: "";
-  transition: all linear .3s;
+  transition: all linear 0.3s;
 }
 
 .pay-feed__arrow--top {
@@ -609,7 +611,6 @@ li {
   z-index: -1;
 }
 
-
 /* modals*/
 .modals__content {
   margin-right: 80px;
@@ -796,20 +797,23 @@ select option {
   width: 100%;
   height: 35px;
   top: 73px;
-  background: linear-gradient(180deg, rgba(168, 168, 168, 1) 0%, 
-                                      rgba(168, 168, 168, 1) 14.2%,
-                                      rgba(0,0,0,0) 14.2%,
-                                      rgba(0,0,0,0) 28.4%,
-                                      rgba(168, 168, 168, 1) 28.4%,
-                                      rgba(168, 168, 168, 1) 42.6%,
-                                      rgba(0,0,0,0) 42.6%,
-                                      rgba(0,0,0,0) 56.8%,
-                                      rgba(168, 168, 168, 1) 56.8%,
-                                      rgba(168, 168, 168, 1) 71%,
-                                      rgba(0,0,0,0) 71%,
-                                      rgba(0,0,0,0) 85.2%,
-                                      rgba(168, 168, 168, 1) 85.2%,
-                                      rgba(168, 168, 168, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(168, 168, 168, 1) 0%,
+    rgba(168, 168, 168, 1) 14.2%,
+    rgba(0, 0, 0, 0) 14.2%,
+    rgba(0, 0, 0, 0) 28.4%,
+    rgba(168, 168, 168, 1) 28.4%,
+    rgba(168, 168, 168, 1) 42.6%,
+    rgba(0, 0, 0, 0) 42.6%,
+    rgba(0, 0, 0, 0) 56.8%,
+    rgba(168, 168, 168, 1) 56.8%,
+    rgba(168, 168, 168, 1) 71%,
+    rgba(0, 0, 0, 0) 71%,
+    rgba(0, 0, 0, 0) 85.2%,
+    rgba(168, 168, 168, 1) 85.2%,
+    rgba(168, 168, 168, 1) 100%
+  );
 }
 
 .modals__content--pay .form__cvv-item {
@@ -822,38 +826,38 @@ select option {
 
 /*adaptive*/
 @media (max-width: 1400px) {
-
   /* how-works */
+  .how-works__carousel,
   .how-works__gallery {
     width: 100%;
   }
 }
 
 @media (max-width: 1199px) {
-
   .container {
     padding-left: 20px;
     padding-right: 20px;
   }
 
   /* how-works */
-  .how-works__card:nth-child(2) {
+  .how-works__card[data-pos="-2"] {
     left: 0;
   }
 
-  .how-works__card:nth-child(3) {
+  .how-works__card[data-pos="-1"] {
     left: 17%;
   }
 
-  .how-works__card:nth-child(5) {
+  .how-works__card[data-pos="1"] {
     right: 19%;
   }
 
-  .how-works__card:last-child {
+  .how-works__card[data-pos="-2"] {
     right: 1%;
   }
 
-  .how-works__card--middle {
+  .how-works__card[data-pos="-1"],
+  .how-works__card[data-pos="1"] {
     transform: scale(1.15);
     z-index: 1;
   }
@@ -897,11 +901,9 @@ select option {
     bottom: 15%;
     right: 23%;
   }
-
 }
 
 @media (max-width: 992px) {
-
   /* pay-feed */
   .pay-feed__arrow--top {
     top: 25%;
@@ -920,16 +922,14 @@ select option {
   /* footer */
   .footer__content {
     flex-wrap: wrap;
-  }    
+  }
 
   .footer__btn {
     margin-right: 10px;
   }
-
 }
 
 @media (max-width: 768px) {
-
   /* testimonials */
   .testimonials__slider .slider__content {
     grid-template-columns: repeat(4, 31%);
@@ -984,11 +984,9 @@ select option {
     order: 2;
     width: 100%;
   }
-
 }
 
 @media (max-width: 640px) {
-
   .main {
     overflow: hidden;
   }
@@ -1032,6 +1030,23 @@ select option {
 
   .how-works__gallery {
     width: 1200px;
+  }
+
+  .how-works__card[data-pos="-2"],
+  .how-works__card[data-pos="2"] {
+    display: none;
+  }
+
+  .how-works__card[data-pos="-1"] {
+    left: 0;
+  }
+
+  .how-works__card[data-pos="0"] {
+    left: 22%;
+  }
+
+  .how-works__card[data-pos="1"] {
+    left: 25%;
   }
 
   .how-works__text {
@@ -1105,11 +1120,9 @@ select option {
     padding-right: 50px;
     padding-left: 50px;
   }
-
 }
 
 @media (max-width: 576px) {
-
   .container {
     padding-left: 10px;
     padding-right: 10px;
@@ -1119,10 +1132,10 @@ select option {
     justify-content: space-between;
   }
 
-    /* slider */
+  /* slider */
   .slider__content {
     grid-template-columns: repeat(4, 50%);
-}
+  }
 
   /* header */
   .header {
@@ -1141,7 +1154,7 @@ select option {
   .header__nav-item {
     margin-bottom: 5px;
   }
-  
+
   .header__burger {
     margin-bottom: 10px;
     position: relative;
@@ -1161,7 +1174,6 @@ select option {
     height: 2px;
     background-color: #000;
   }
-
 
   .header__burger::after {
     position: absolute;
@@ -1240,11 +1252,9 @@ select option {
   .footer__btn--tablet {
     margin-top: 20px;
   }
-
 }
 
 @media (max-width: 320px) {
-
   /* slider */
   .slider__content {
     grid-template-columns: repeat(4, 47%);
@@ -1279,7 +1289,7 @@ select option {
     order: 6;
   }
 
-  .slider__item--owl{
+  .slider__item--owl {
     order: 7;
   }
 
@@ -1287,9 +1297,8 @@ select option {
     order: 8;
   }
 
-
   /* how-works */
-  .how-works__card:last-child {
+  .how-works__card[data-pos="-2"] {
     display: none;
   }
 
@@ -1301,30 +1310,30 @@ select option {
     overflow: hidden;
   }
 
-  .how-works__card:nth-child(3),
-  .how-works__card:nth-child(5) {
+  .how-works__card[data-pos="-1"],
+  .how-works__card[data-pos="1"] {
     transform: scale(0.63);
   }
 
-  .how-works__card:nth-child(2) {
+  .how-works__card[data-pos="-2"] {
     top: -8%;
     left: 44%;
     z-index: 2;
   }
 
-  .how-works__card:nth-child(3) {
+  .how-works__card[data-pos="-1"] {
     top: -15%;
     left: 34%;
     z-index: 1;
   }
 
-  .how-works__card:nth-child(4) {
+  .how-works__card[data-pos="0"] {
     top: 30%;
     left: 47%;
     z-index: 3;
   }
 
-  .how-works__card:nth-child(5) {
+  .how-works__card[data-pos="1"] {
     top: 36%;
     left: 45%;
   }
@@ -1430,7 +1439,7 @@ select option {
   .footer__btn--tablet {
     display: none;
   }
-  
+
   .footer__rights {
     justify-content: space-between;
   }
@@ -1448,5 +1457,4 @@ select option {
   .footer__copyright-and {
     display: none;
   }
-
 }
