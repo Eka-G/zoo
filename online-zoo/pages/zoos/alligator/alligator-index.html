@@ -237,7 +237,7 @@
           <img src="../../../assets/icons/logo-footer.svg" alt="logo">
         </a>
 
-        <button class="footer__btn btn">
+        <button id="donate-btn" class="footer__btn btn">
           <a class="footer__btn-link">Donate for volunteers</a>
         </button>
 
@@ -277,7 +277,7 @@
         <img class="footer__rss" src="../../../assets/icons/logo-rsschool.svg" alt="RS School" title="RS School">
         <img class="footer__yem" src="../../../assets/icons/logo-yem.svg" alt="yem Digital" title="yem Digital">
 
-        <button class="footer__btn footer__btn--tablet btn">
+        <button id="donate-tablet-btn" class="footer__btn footer__btn--tablet btn">
           <a class="footer__btn-link">Donate for volunteers</a>
         </button>
 
@@ -311,13 +311,74 @@
 
       <div class="modals__content modals__content--feedback">
         <form class="form" action="">
-          <input id="name" class="form__item" type="text" placeholder="Name" required>
+          <input id="name" class="form__item form__item--colored" type="text" placeholder="Name" required>
           <br>
-          <input id="email" class="form__item" type="email" placeholder="Email" required>
+          <input id="email" class="form__item form__item--colored" type="email" placeholder="Email" required>
           <br>
-          <textarea id="text-feedback" class="form__item form__item--feedback" placeholder="Your text here (300 max)"
+          <textarea id="text-feedback" class="form__item form__item--feedback form__item--colored"
+            placeholder="Your text here (300 max)" maxlength="300" required></textarea>
+          <button class="btn modals__btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modals__container" data-modal-name="donate">
+      <div class="modals__header modals__header--donate">
+        <div class="modals__close js-close"></div>
+      </div>
+
+      <div class="modals__content modals__content--donate">
+        <form class="form">
+          <select class="form__item form__item-list" name="animal">
+            <option value="alligator">Alligator</option>
+            <option value="eagle">Eagle</option>
+            <option value="gorilla">Gorilla</option>
+            <option value="panda">Panda</option>
+          </select>
+
+          <div class="form__money">
+            <input id="donate" class="form__item form__donate-sum" type="number" placeholder="Amount" max="9999"
+              required>
+            <select name="donate" class="form__item form__currency">
+              <option value="alligator">usd</option>
+              <option value="eagle">eur</option>
+            </select>
+          </div>
+
+          <textarea class="form__item form__item--text-donate" placeholder="Your text here" maxlength="280"
             required></textarea>
-          <button id="send" class="btn modals__btn btn--invalid" type="submit">Submit</button>
+          <button id="next-donate" class="btn modals__btn" type="submit">Next</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modals__container" data-modal-name="pay">
+      <div class="modals__header modals__header--pay">
+        <div class="modals__close js-close"></div>
+      </div>
+
+      <div id="pay-modal" class="modals__content modals__content--pay">
+        <form id="lalal" class="form">
+          <div class="form__cards-wrapper">
+            <div class="form__card form__card-front">
+              <input id="card" class="form__item form__central-item" type="number" placeholder="Сard Number"
+                data-limit="16" required>
+              <input class="form__item form__central-item form__short-item" type="number" placeholder="MM" min="1"
+                max="12" data-limit="2" required>
+              <input class="form__item form__central-item form__short-item" type="number" placeholder="YY" min="21"
+                max="40" data-limit="2" required>
+              <input class="form__item form__central-item" type="text" placeholder="Сardholder Name" required>
+            </div>
+
+            <div class="form__card form__card-underside">
+              <div class="form__cvv">
+                <input id="" class="form__item form__central-item form__cvv-item" type="number" placeholder="CVC"
+                  max="999" data-limit="3" required>
+              </div>
+            </div>
+          </div>
+
+          <button id="form-donate-btn" class="btn modals__btn" type="submit">Donate</button>
         </form>
       </div>
     </div>
