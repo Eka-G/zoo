@@ -4,7 +4,10 @@ const body = document.querySelector(".body");
 const modals = document.querySelector(".js-modals");
 const payModal = document.getElementById("pay-modal");
 const card = document.getElementById("card");
-console.log(111)
+const nextDonateBtn = document.getElementById("next-donate");
+const feedbackLink = document.getElementById("nav-feedback");
+const donateBtn = document.getElementById("donate-btn");
+const donateTabletBtn = document.getElementById("donate-tablet-btn");
 let closeHandler = () => { };
 
 function openModal(name) {
@@ -40,6 +43,11 @@ modals.addEventListener("click", (event) => {
   }
 });
 
+nextDonateBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  if (window.getComputedStyle(event.target).getPropertyValue("cursor") !== "not-allowed") openModal("pay")
+});
+
 function sliceValue(data, num) {
   return data.slice(0, num);
 }
@@ -65,3 +73,7 @@ payModal.addEventListener("change", (event) => {
     event.target.value = completeValue(event.target.value, leng);
   }
 });
+
+feedbackLink.addEventListener("click", () => openModal("feedback"));
+donateBtn.addEventListener("click", () => openModal("donate"));
+donateTabletBtn.addEventListener("click", () => openModal("donate"));
