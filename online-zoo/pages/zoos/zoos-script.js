@@ -41,3 +41,19 @@ function toggleAccordion(event) {
 }
 
 informationBox.addEventListener("click", (event) => toggleAccordion(event));
+
+
+//videoCarousel
+const videoList = document.querySelector(".translation__list");
+const mainVideo = document.querySelector(".translation__main-content");
+
+function changeVideo(event) {
+  const currentVideo = event.target.firstChild.nextSibling;
+  let mainSrc = mainVideo.src;
+  let currentSrc = currentVideo.src;
+
+  mainVideo.src = currentSrc;
+  currentVideo.src = mainSrc;
+}
+
+videoList.addEventListener("click", (event) => changeVideo(event));
