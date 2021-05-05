@@ -128,60 +128,64 @@
           </div>
         </div>
 
-        <div class="information__item information__population">
-          <div class="information__description">
-            <h2 class="information__title">Population</h2>
-            <p>
-              The eastern plains gorilla has a population of 17,000.
-            </p>
+        <div class="information__block">
+          <div class="information__item information__accordion information__population">
+            <div class="information__description">
+              <h2 class="information__title">Population</h2>
+              <p class="information__text-accordion">
+                The eastern plains gorilla has a population of 17,000.
+              </p>
+
+              <div class="information__arrow-wrapper">
+                <div class="information__arrow"></div>
+              </div>
+            </div>
           </div>
 
-          <div class="information__arrow-wrapper">
-            <div class="information__arrow"></div>
-          </div>
-        </div>
+          <div class="information__item information__accordion information__nutrition">
+            <div class="information__description">
+              <h2 class="information__title">Nutrition</h2>
+              <p class="information__text-accordion">
+                The basis of gorilla food is plant food. From the plants used, wild celery, bedstraw, nettle, bamboo
+                shoots, blue pygeum fruits can be distinguished. Fruits and nuts are an addition to the main diet, while
+                animal food (insects) is a small part of the menu.
+              </p>
 
-        <div class="information__item information__habitat">
-          <div class="information__description">
-            <h2 class="information__title">Habitat</h2>
-            <p>
-              The natural habitat of gorillas covers tropical or subtropical forests in sub – Saharan Africa.
-            </p>
+              <div class="information__arrow-wrapper">
+                <div class="information__arrow"></div>
+              </div>
+            </div>
           </div>
+        </div><!-- information__block -->
 
-          <div class="information__arrow-wrapper">
-            <div class="information__arrow"></div>
-          </div>
-        </div>
+        <div class="information__block">
+          <div class="information__item information__accordion information__habitat">
+            <div class="information__description">
+              <h2 class="information__title">Habitat</h2>
+              <p class="information__text-accordion">
+                The natural habitat of gorillas covers tropical or subtropical forests in sub – Saharan Africa.
+              </p>
 
-        <div class="information__item information__nutrition">
-          <div class="information__description">
-            <h2 class="information__title">Nutrition</h2>
-            <p>
-              The basis of gorilla food is plant food. From the plants used, wild celery, bedstraw, nettle, bamboo
-              shoots, blue pygeum fruits can be distinguished. Fruits and nuts are an addition to the main diet, while
-              animal food (insects) is a small part of the menu.
-            </p>
-          </div>
-
-          <div class="information__arrow-wrapper">
-            <div class="information__arrow"></div>
-          </div>
-        </div>
-
-        <div class="information__item information__facts">
-          <div class="information__description">
-            <h2 class="information__title">Interesting facts</h2>
-            <p>
-              The DNA of gorillas is strongly similar to that of humans, 95 to 99% depending on what is included, and
-              they are the next closest living relatives of humans after chimpanzees and bonobos.
-            </p>
+              <div class="information__arrow-wrapper">
+                <div class="information__arrow"></div>
+              </div>
+            </div>
           </div>
 
-          <div class="information__arrow-wrapper">
-            <div class="information__arrow"></div>
+          <div class="information__item information__accordion information__facts">
+            <div class="information__description">
+              <h2 class="information__title">Interesting facts</h2>
+              <p class="information__text-accordion">
+                The DNA of gorillas is strongly similar to that of humans, 95 to 99% depending on what is included, and
+                they are the next closest living relatives of humans after chimpanzees and bonobos.
+              </p>
+
+              <div class="information__arrow-wrapper">
+                <div class="information__arrow"></div>
+              </div>
+            </div>
           </div>
-        </div>
+        </div> <!-- information__block -->
 
       </div>
     </div>
@@ -231,12 +235,12 @@
       </div>
 
       <div class="footer__rights">
-          <img class="footer__rss" src="../../../assets/icons/logo-rsschool.svg" alt="RS School" title="RS School">
-          <img class="footer__yem" src="../../../assets/icons/logo-yem.svg" alt="yem Digital" title="yem Digital">
+        <img class="footer__rss" src="../../../assets/icons/logo-rsschool.svg" alt="RS School" title="RS School">
+        <img class="footer__yem" src="../../../assets/icons/logo-yem.svg" alt="yem Digital" title="yem Digital">
 
-          <button class="footer__btn footer__btn--tablet btn">
-            <a class="footer__btn-link">Donate for volunteers</a>
-          </button>
+        <button class="footer__btn footer__btn--tablet btn">
+          <a class="footer__btn-link">Donate for volunteers</a>
+        </button>
 
         <div class="footer__rights-info">
           <p class="footer__copyright">
@@ -257,7 +261,7 @@
 
       <img src="../../../assets/images/footer__bg.png" alt="background" class="footer__bg">
     </picture>
-    
+
   </footer>
 
   <div class="modals js-modals">
@@ -272,7 +276,8 @@
           <br>
           <input id="email" class="form__item" type="email" placeholder="Email" required>
           <br>
-          <textarea id="text-feedback" class="form__item form__item--feedback" placeholder="Your text here (300 max)" required></textarea>
+          <textarea id="text-feedback" class="form__item form__item--feedback" placeholder="Your text here (300 max)"
+            required></textarea>
           <button id="send" class="btn modals__btn btn--invalid" type="submit">Submit</button>
         </form>
       </div>
@@ -280,6 +285,7 @@
   </div>
 
   <script src="../../modals.js"></script>
+  <script src="../zoos-script.js"></script>
 </body>
 
 </html>

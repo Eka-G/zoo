@@ -680,6 +680,10 @@ li {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
+
+  .information__block--active {
+    height: auto;
+  }
 }
 
 @media (max-width: 576px) {

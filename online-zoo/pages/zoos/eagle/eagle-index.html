@@ -82,7 +82,7 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
-          
+
           <button class="translation__btn btn">
             <a class="translation__btn-link" href="../../page-404/index.html">Feed</a>
           </button>
@@ -128,63 +128,67 @@
           </div>
         </div>
 
-        <div class="information__item information__population">
-          <div class="information__description">
-            <h2 class="information__title">Population</h2>
-            <p>
-              Today, the population of bald eagles is in minimal danger. The total number of individuals is about two
-              hundred thousand.
-            </p>
+        <div class="information__block">
+          <div class="information__item information__accordion information__population">
+            <div class="information__description">
+              <h2 class="information__title">Population</h2>
+              <p class="information__text-accordion">
+                Today, the population of bald eagles is in minimal danger. The total number of individuals is about two
+                hundred thousand.
+              </p>
+
+              <div class="information__arrow-wrapper">
+                <div class="information__arrow"></div>
+              </div>
+            </div>
           </div>
 
-          <div class="information__arrow-wrapper">
-            <div class="information__arrow"></div>
-          </div>
-        </div>
+          <div class="information__item information__accordion information__nutrition">
+            <div class="information__description">
+              <h2 class="information__title">Nutrition</h2>
+              <p class="information__text-accordion">
+                Mostly bald eagles feed on fish or birds. They also hunt ground squirrels, rabbits, beavers, raccoons
+                and muskrats. Eagles can also attack a baby seal. Eagles also feed on carrion, for example, they eat the
+                corpses of large horned animals.
+              </p>
 
-        <div class="information__item information__habitat">
-          <div class="information__description">
-            <h2 class="information__title">Habitat</h2>
-            <p>
-              A large number of eagles live in the state of Minnesota-about 1300 pairs. In another US state, Florida,
-              there are about 1,200 pairs. In Alaska, about 40 thousand individuals nest annually, after laying eggs,
-              with the onset of cold weather, the eagles fly south.
-            </p>
+              <div class="information__arrow-wrapper">
+                <div class="information__arrow"></div>
+              </div>
+            </div>
           </div>
+        </div><!-- information__block -->
 
-          <div class="information__arrow-wrapper">
-            <div class="information__arrow"></div>
-          </div>
-        </div>
+        <div class="information__block">
+          <div class="information__item information__accordion information__habitat">
+            <div class="information__description">
+              <h2 class="information__title">Habitat</h2>
+              <p class="information__text-accordion">
+                A large number of eagles live in the state of Minnesota-about 1300 pairs. In another US state, Florida,
+                there are about 1,200 pairs. In Alaska, about 40 thousand individuals nest annually, after laying eggs,
+                with the onset of cold weather, the eagles fly south.
+              </p>
 
-        <div class="information__item information__nutrition">
-          <div class="information__description">
-            <h2 class="information__title">Nutrition</h2>
-            <p>
-              Mostly bald eagles feed on fish or birds. They also hunt ground squirrels, rabbits, beavers, raccoons and
-              muskrats. Eagles can also attack a baby seal. Eagles also feed on carrion, for example, they eat the
-              corpses of large horned animals.
-            </p>
-          </div>
-
-          <div class="information__arrow-wrapper">
-            <div class="information__arrow"></div>
-          </div>
-        </div>
-
-        <div class="information__item information__facts">
-          <div class="information__description">
-            <h2 class="information__title">Interesting facts</h2>
-            <p>
-              Bald eagles can live a long time, with a longevity record of 28 years in the wild and 36 years in
-              captivity. The bald eagle is the national bird of the United States of America.
-            </p>
+              <div class="information__arrow-wrapper">
+                <div class="information__arrow"></div>
+              </div>
+            </div>
           </div>
 
-          <div class="information__arrow-wrapper">
-            <div class="information__arrow"></div>
+          <div class="information__item information__accordion information__facts">
+            <div class="information__description">
+              <h2 class="information__title">Interesting facts</h2>
+              <p class="information__text-accordion">
+                Bald eagles can live a long time, with a longevity record of 28 years in the wild and 36 years in
+                captivity. The bald eagle is the national bird of the United States of America.
+              </p>
+
+              <div class="information__arrow-wrapper">
+                <div class="information__arrow"></div>
+              </div>
+            </div>
           </div>
-        </div>
+        </div> <!-- information__block -->
 
       </div>
     </div>
@@ -234,12 +238,12 @@
       </div>
 
       <div class="footer__rights">
-          <img class="footer__rss" src="../../../assets/icons/logo-rsschool.svg" alt="RS School" title="RS School">
-          <img class="footer__yem" src="../../../assets/icons/logo-yem.svg" alt="yem Digital" title="yem Digital">
+        <img class="footer__rss" src="../../../assets/icons/logo-rsschool.svg" alt="RS School" title="RS School">
+        <img class="footer__yem" src="../../../assets/icons/logo-yem.svg" alt="yem Digital" title="yem Digital">
 
-          <button class="footer__btn footer__btn--tablet btn">
-            <a class="footer__btn-link">Donate for volunteers</a>
-          </button>
+        <button class="footer__btn footer__btn--tablet btn">
+          <a class="footer__btn-link">Donate for volunteers</a>
+        </button>
 
         <div class="footer__rights-info">
           <p class="footer__copyright">
@@ -260,7 +264,7 @@
 
       <img src="../../../assets/images/footer__bg.png" alt="background" class="footer__bg">
     </picture>
-    
+
   </footer>
   <div class="modals js-modals">
     <div class="modals__container" data-modal-name="feedback">
@@ -274,7 +278,8 @@
           <br>
           <input id="email" class="form__item" type="email" placeholder="Email" required>
           <br>
-          <textarea id="text-feedback" class="form__item form__item--feedback" placeholder="Your text here (300 max)" required></textarea>
+          <textarea id="text-feedback" class="form__item form__item--feedback" placeholder="Your text here (300 max)"
+            required></textarea>
           <button id="send" class="btn modals__btn btn--invalid" type="submit">Submit</button>
         </form>
       </div>
@@ -282,6 +287,7 @@
   </div>
 
   <script src="../../modals.js"></script>
+  <script src="../zoos-script.js"></script>
 </body>
 
 </html>
