@@ -155,7 +155,7 @@ li {
   max-width: 992px;
   max-height: 630px;
   overflow: hidden;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   /* display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 0;

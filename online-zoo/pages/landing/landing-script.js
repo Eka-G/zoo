@@ -68,22 +68,54 @@ carousel.addEventListener("click", (event) => activeCarousel(event));
 const prevArrow = document.querySelector(".slider__arrow--prev");
 const nextArrow = document.querySelector(".slider__arrow--next");
 const vieport = document.querySelector(".slider__vieport");
-const vieportWidth = vieport.offsetWidth;
+const slideList = document.querySelectorAll(".pets__slider .slider__content");
+let animationInProgress = false;
+
+const vieportWidth = 992;
+let counter = 0;
 
 const scrollLeft = (event) => {
-  let lastSlide = document.querySelector('[data-slide="last"]');
-  const newClone = lastSlide.cloneNode(true);
-  console.log(newClone);
-  vieport.scrollBy((-992), 0)
+  if (animationInProgress) return;
 
+  const slideList = document.querySelectorAll(".pets__slider .slider__content");
+  const firstSlide = slideList[1];
+  const newClone = slideList[slideList.length - 1].cloneNode(true);
+  const scroll = vieport.scrollLeft;
+
+  vieport.prepend(newClone);
+
+  vieport.scrollLeft = scroll + vieportWidth;
+
+  vieport.scrollTo({
+    left: scroll,
+    behavior: "smooth"
+  });
+
+  animationInProgress = true;
+
+  setTimeout(function () { animationInProgress = false; }, 600);
+}
+
+const scrollRight = () => {
+  if (animationInProgress) return;
+  const firstSlide = slideList[0];
+  const newClone = slideList[0].cloneNode(true);
+  const scroll = vieport.scrollLeft;
+
+  vieport.scrollTo({
+    left: scroll + vieportWidth,
+    behavior: "smooth"
+  });
+
+  vieport.appendChild(newClone);
+
+  animationInProgress = true;
+
+  // vieport.removeChild(firstSlide);
+  setTimeout(function () { animationInProgress = false; }, 600);
 };
 
-const scrollRight = (event) => {
-  let firstSlide = document.querySelector('[data-slide="first"]');
-  const newClone = firstSlide.cloneNode(true);
-  console.log(newClone);
-  vieport.scrollBy(992, 0)
-};
+const delChild = (node) => vieport.removeChild(node);
 
-prevArrow.addEventListener("click", (event) => scrollLeft(event));
-nextArrow.addEventListener("click", (event) => scrollRight(event));
+prevArrow.addEventListener("click", () => scrollLeft());
+nextArrow.addEventListener("click", () => scrollRight());
