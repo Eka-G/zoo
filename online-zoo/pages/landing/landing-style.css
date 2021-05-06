@@ -150,9 +150,22 @@ li {
   transform: rotateY(180deg);
 }
 
+.slider__vieport {
+  display: flex;
+  max-width: 992px;
+  max-height: 630px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  /* display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 0;
+  grid-auto-columns: 0; */
+}
+
 .slider__content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  min-width: 100%;
 }
 
 .slider__item {

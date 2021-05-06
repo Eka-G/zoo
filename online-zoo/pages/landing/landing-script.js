@@ -63,3 +63,21 @@ function updatePos(elem) {
 }
 
 carousel.addEventListener("click", (event) => activeCarousel(event));
+
+//slider pets-in-zoo
+const prevArrow = document.querySelector(".slider__arrow--prev");
+const nextArrow = document.querySelector(".slider__arrow--next");
+const vieport = document.querySelector(".slider__vieport");
+const vieportWidth = vieport.offsetWidth;
+
+const scrollLeft = (event) => {
+  vieport.scrollBy((-vieportWidth), 0)
+
+};
+
+const scrollRight = (event) => {
+  vieport.scrollBy(vieportWidth, 0)
+};
+
+prevArrow.addEventListener("click", (event) => scrollLeft(event));
+nextArrow.addEventListener("click", (event) => scrollRight(event));
