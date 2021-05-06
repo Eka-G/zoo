@@ -42,12 +42,11 @@
     </div>
   </header>
 
-  <main class="map__wrapper">
+  <main id="dnd-viewport" class="map-wrapper">
     <div class="map">
-
       <div class="container container--map">
         <h1 class="map__main-title">Online zoo</h1>
-        <div id="map-wrapper" class="map__bg">
+        <div id="translate" class="map__bg">
 
           <img id="map" class="map__img" src="../../assets/images/map/map.png" alt="world map">
 
@@ -146,7 +145,6 @@
     </div>
 
     <div class="map__scale--wrapper">
-      <!-- sticky назначен обертке map__scale--wrapper, у обертки нулевая ширина, чтобы не вытесняла карту -->
       <div class="map__scale">
         <div class="map__minus">—</div>
         <div class="map__plus">+</div>

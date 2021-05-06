@@ -74,6 +74,9 @@ li {
 
 .container--map {
   position: relative;
+  width: 100%;
+  transform: scale(var(--scale));
+  transition: transform ease 0.3s;
 }
 
 .btn {
@@ -147,19 +150,22 @@ li {
 }
 
 /* map */
-.map__wrapper {
+.map-wrapper {
+  padding-top: 95px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   height: 100%;
+  overflow: hidden;
 }
 
 .map {
   margin: 0 auto;
-  /* padding-top: 95px; */
-  padding-bottom: 95px;
+  /* padding-top: 95px;
+  padding-bottom: 95px; */
+  width: 100vw;
   position: relative;
-  overflow-x: hidden;
 }
 
 .map__main-title {
@@ -173,14 +179,13 @@ li {
 .map__bg {
   position: relative;
   width: 1162px;
-  height: calc(100vh - 100px);
+  height: 747px;
   /* background: no-repeat center url(../../assets/images/map/map.png); */
 }
 
 .map__img {
   position: absolute;
   width: 100%;
-  transition: transform ease 0.3s;
   user-select: none;
 }
 
@@ -409,6 +414,7 @@ li {
 
 /* footer */
 .footer {
+  position: relative;
   padding-top: 80px;
   padding-bottom: 20px;
   position: relative;
@@ -419,9 +425,11 @@ li {
 }
 
 .footer__content {
+  position: relative;
   margin-bottom: 60px;
   display: flex;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .footer__left-side {
@@ -506,10 +514,12 @@ li {
 
 /* ---------------------- */
 .footer__rights {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
+  z-index: 2;
 }
 
 .footer__rights-info {
@@ -528,14 +538,14 @@ li {
   width: 100%;
   height: 100%;
   top: -20px;
-  z-index: -1;
+  z-index: 1;
 }
 
 /*adaptive*/
 @media (max-width: 1200px) {
   .container--map {
-    margin: 0 calc((100% - 1162px) / 2);
-    position: relative;
+    /* margin: 0 calc((100% - 1162px) / 2); */
+    /* position: relative; */
   }
 
   /* footer */
@@ -617,7 +627,7 @@ li {
 
 @media (max-width: 640px) {
   .container--map {
-    margin: 0 calc((13% - 640px) / 2);
+    /* margin: 0 calc((13% - 640px) / 2); */
   }
 
   .main {
@@ -818,7 +828,7 @@ li {
 
 @media (max-width: 320px) {
   .container--map {
-    margin: 0 calc((5% - 640px) / 2);
+    /* margin: 0 calc((5% - 640px) / 2); */
   }
 
   /* map */
