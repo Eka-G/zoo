@@ -71,12 +71,18 @@ const vieport = document.querySelector(".slider__vieport");
 const vieportWidth = vieport.offsetWidth;
 
 const scrollLeft = (event) => {
-  vieport.scrollBy((-vieportWidth), 0)
+  let lastSlide = document.querySelector('[data-slide="last"]');
+  const newClone = lastSlide.cloneNode(true);
+  console.log(newClone);
+  vieport.scrollBy((-992), 0)
 
 };
 
 const scrollRight = (event) => {
-  vieport.scrollBy(vieportWidth, 0)
+  let firstSlide = document.querySelector('[data-slide="first"]');
+  const newClone = firstSlide.cloneNode(true);
+  console.log(newClone);
+  vieport.scrollBy(992, 0)
 };
 
 prevArrow.addEventListener("click", (event) => scrollLeft(event));
